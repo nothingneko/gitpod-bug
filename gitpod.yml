@@ -1,0 +1,7 @@
+image: ghcr.io/ultramarine-linux/ultramarine:40
+
+tasks:
+  - name: Setup Environment
+    before: useradd -G wheel gitpod
+    init: sudo dnf install katsu submarine vboot-utils
+
